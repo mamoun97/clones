@@ -1,5 +1,4 @@
-import { Avatar, Card } from '@nextui-org/react'
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { FaPlaystation } from 'react-icons/fa'
 import { MdLaptopChromebook } from 'react-icons/md'
 
@@ -42,7 +41,7 @@ export default function GalleryAnimation() {
         },
     ])
     return (
-        <div className='flex min-w-[480px] gap-[5px] w-full '>
+        <div className='flex min-w-[540px] gap-[2px] w-full '>
             {
                 items.map((el, k) => {
                     return <div   onClick={() => {
@@ -50,7 +49,7 @@ export default function GalleryAnimation() {
                         setItems(items.map((item, index) => {
                             return { ...item, select: index == k }
                         }))
-                    }} className={`${el.select ? "w-[60%]" : "w-[10%]"} h-80 overflow-hidden relative rounded-lg bg-center bg-no-repeat bg-cover
+                    }} className={`${el.select ? "w-[60%]" : "w-[10%]"} h-80 overflow-hidden relative rounded-md bg-center bg-no-repeat bg-cover
                     shadow-[0_0_50px_0_#0003_inset] !transition-all duration-300 cursor-pointer  flex flex-col justify-end p-[8px]
                     
                      `}
@@ -63,7 +62,7 @@ export default function GalleryAnimation() {
 
                         </div>
                         </div>
-                        <div className={`h-7 w-7 flex justify-center items-center relative transition-all duration-500 rounded-lg ${el.select?"bg-content1 text-primary":"bg-content1/5 text-white"}`}>
+                        <div className={`h-7 w-7 flex justify-center items-center ms-1 relative transition-all duration-500 rounded-full ${el.select?"bg-content1 text-foreground":"bg-content1/5 text-white"}`}>
                             {el.type=="play"?<FaPlaystation className='w-4 h-4 text-inherit'/>:
                             <MdLaptopChromebook className='w-4 h-4 text-inherit'/>}
                             <div className={`absolute text-sm whitespace-nowrap text-white top-1/2    -translate-y-1/2 tracking-wider left-full pl-3  font-bold`}>
