@@ -10,16 +10,36 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        myfont: ["Roboto","Tajawal","Cairo","Noto Sans Arabic"],
+        myfont: ["Poppins", "Tajawal", "Cairo", "Noto Sans Arabic"],
       },
       keyframes: {
         show: {
           '0%': { opacity: '0' },
           '100%': { transform: '1' },
-        }
+        },
+        trLeft: {
+          '0%': { transform: 'translateX(-100%)' },
+          '100%': { transform: 'none' },
+        },
+        trRight: {
+          '0%': { transform: 'translateX(100%)' },
+          '100%': { transform: 'none' },
+        },
+        trTop: {
+          '0%': { transform: 'translateY(-100%)' },
+          '100%': { transform: 'none' },
+        },
+        trBottom: {
+          '0%': { transform: 'translateY(100%)' },
+          '100%': { transform: 'none' },
+        },
       },
       animation: {
         'show': 'show .8s linear ',
+        'trLeft': 'trLeft 2s linear ',
+        'trRight': 'trRight 2s linear ',
+        'trTop': 'trTop 1s linear ',
+        'trBottom': 'trBottom 3s linear ',
       }
 
     },

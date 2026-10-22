@@ -10,8 +10,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@grapesjs/react": "^2.0.0",
+    "@grapesjs/studio-sdk": "^1.0.40",
     "@nextui-org/react": "^2.4.8",
     "framer-motion": "^11.11.17",
+    "grapesjs": "^0.22.6",
+    "next-themes": "^0.4.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-icons": "^5.3.0"

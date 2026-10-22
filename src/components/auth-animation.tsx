@@ -90,7 +90,7 @@ function Login() {
         <Button color='secondary' variant='flat' className='w-full mx-auto font-semibold'>
             Login
         </Button>
-        <Social txt='Sign un' />
+        <Social txt='Sign up' />
 
     </div>
 }

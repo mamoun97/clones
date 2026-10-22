@@ -2,7 +2,7 @@ import {NextUIProvider} from "@nextui-org/react";
 
 export default function NextUiProvider({children}:{children:React.ReactNode}) {
   return (
-    <NextUIProvider >
+    <NextUIProvider  >
       {children}
     </NextUIProvider>
   );

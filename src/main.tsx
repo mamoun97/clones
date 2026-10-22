@@ -7,7 +7,7 @@ import Provider from './providers/index.tsx'
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <Provider>
-      <div className="myfont ">
+      <div className="myfont no-scrollbar ">
         <App  />
       </div>
     </Provider>
